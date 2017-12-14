@@ -110,5 +110,58 @@ body {
   font-size: 3vh;
   font-weight: bold;
   margin-top: 30vh;
+  margin-left: 1vh;
+  margin-right: 4px;
+}
+
+.glyphicon-chevron-left {
+  color: #fff;
+  font-size: 5vh;
+  cursor: pointer;
+}
+
+.signup-section {
+  display: none;
+}
+
+.signup-section h1 {
+  font-size: 24px;
+}
+
+.signup-section span {
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  color: slategray; 
+}
+
+.signup-section span:hover {
+  color: #000;
+}
+
+.signup-section li {
+  cursor: pointer;
+}
+
+.signup-section .dropdown img {
+  height: 30px;
+}
+
+.signup-section .dropdown .btn-default {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.btn-next {
+  width: 100%;
+  color: #fff;
+  margin-top: 15vh;
+  padding: 0 21vh;
+  background-color: BlueViolet;
+}
+
+.disabled {
+  background-color: slategray;
 }
 
