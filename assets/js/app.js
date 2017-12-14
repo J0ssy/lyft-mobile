@@ -1,3 +1,5 @@
+var code = "";
+
 $(document).ready(function(){
   //Cargador Inicial
   setTimeout(function() {
@@ -38,10 +40,16 @@ $(document).ready(function(){
         }
     })
 
-  //Avanzar a Code Section
-  $('.btn-next').click(nextToCodeSection);
-  function nextToCodeSection() {
- 
+  //Generar código
+  $('.btn-next').click(generateCode);
+  function generateCode() {
+  var str = $("#inputNumbers").val();
+  for (var i = 0; i < 3; i++) {
+    code += str.charAt(Math.floor(Math.random() * str.length));
+    }
+     alert(code);
   }
+
+
 
 });
