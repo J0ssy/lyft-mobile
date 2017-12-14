@@ -120,15 +120,15 @@ body {
   cursor: pointer;
 }
 
-.signup-section {
+.signup-section, .verify-section {
   display: none;
 }
 
-.signup-section h1 {
+.signup-section h1, .verify-section h1 {
   font-size: 24px;
 }
 
-.signup-section span {
+.signup-section span, .verify-section span {
   cursor: pointer;
   transition-property: color;
   transition-duration: .3s;
@@ -136,7 +136,7 @@ body {
   color: slategray; 
 }
 
-.signup-section span:hover {
+.signup-section span:hover, .verify-section  span:hover {
   color: #000;
 }
 
@@ -153,7 +153,7 @@ body {
   padding-top: 0;
 }
 
-.btn-next {
+.btn-next, .btn-nextTo, .btn-resend {
   width: 100%;
   color: #fff;
   margin-top: 15vh;
