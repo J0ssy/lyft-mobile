@@ -61,6 +61,7 @@ $(document).ready(function(){
     $('.verify-section').hide();
     $('.signup-section').show();
   }
+
   //Re-generar código
   $('.btn-resend').click(resendCode);
   function resendCode() {
@@ -71,5 +72,23 @@ $(document).ready(function(){
     }
     alert(otherCode);
   }
+
+  //Validar Código
+  $('#validateCode').keyup(function() {
+    var validCode = $(this).val();
+    if (validCode == code || validCode == otherCode ) {
+      $('.btn-nextTo').removeClass('disabled');
+    } else {
+      $('.btn-nextTo').addClass('disabled');
+    }
+  });
+
+  //Generar código
+  $('.btn-nextTo').click(nextToForm);
+  function nextToForm() {
+    $('.verify-section').hide();
+    $('.form-section').show();
+  }
+
 
 });
